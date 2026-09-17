@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadly - Road Construction HTML Template</title>
+
+  <!-- Compiled Tailwind CSS -->
+  <link rel="stylesheet" href="../dist/output.css">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts: Space Grotesk & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/input.css">
+</head>
+
+
+<body class="bg-[#1A1A1A] font-['DM_Sans'] antialiased min-h-screen py-0  text-gray-800">
+
+  <!-- Main Boxed Wrapper - Max Width 1920px -->
+  <div class="max-w-[1920px] mx-auto bg-white shadow-2xl">
+
+    <!-- 1. HEADER SECTION -->
+    <header class="w-full max-w-[1920px] mx-auto relative z-50 bg-[#0B1C33]">
+
+      <div class="bg-[#E53924] text-white h-12 px-6 lg:px-12 flex justify-between items-center text-xs lg:text-sm">
+        <div class="flex items-center gap-8 lg:ml-[340px]">
+          <a href="tel:1-414-425-5353" class="flex items-center gap-2 hover:opacity-80 transition">
+            <i class="fa-solid fa-phone-volume text-sm"></i>
+            <span>1-414-425-5353</span>
+          </a>
+          <div class="hidden md:flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-sm"></i>
+            <span>11251 W. Forest Home Ave. Franklin, WI 53132</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <span class="hidden sm:inline font-medium">Follow Us</span>
+          <span class="w-8 h-[1px] bg-white/40 hidden sm:inline-block"></span>
+          <div class="flex items-center gap-2">
+            <a href="#"
+              class="w-7 h-7 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-[#E53924] transition"><i
+                class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="#"
+              class="w-7 h-7 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-[#E53924] transition"><i
+                class="fa-brands fa-x-twitter text-xs"></i></a>
+            <a href="#"
+              class="w-7 h-7 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-[#E53924] transition"><i
+                class="fa-brands fa-linkedin-in text-xs"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="relative flex items-center justify-between h-[100.5px] pr-6 lg:pr-12 shadow-[0_20px_40px_rgba(0,0,0,0.7)]">
+
+        <div class="absolute left-0 top-[-48px] bottom-0 w-[320px] bg-[#E53924] flex items-center justify-center z-20">
+          <a href="#" class="flex items-center gap-3">
+            <img src="images/roadly-logo.png" alt="Roadly">
+          </a>
+        </div>
+
+        <nav
+          class="hidden lg:flex items-center gap-7 text-white font-bold text-xs lg:text-sm tracking-widest uppercase ml-[340px]">
+
+          <div class="relative group cursor-pointer inline-block">
+            <div class="hover:text-[#E53924] transition-colors duration-300 flex items-center gap-2 py-2">
+              HOME <i
+                class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 group-hover:text-[#E53924] transition-all duration-300"></i>
+            </div>
+            <div
+              class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 bg-[#0B1C33]/95 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-3 z-[999] text-xs tracking-normal border border-white/10 rounded-b-2xl rounded-tr-2xl rounded-tl-sm border-t-2 border-t-[#E53924] overflow-hidden mt-1">
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Home
+                  Classic</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Home
+                  Construction</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Home Modern
+                  Paving</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Home Dark
+                  Overlay</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hover:text-[#E53924] transition-colors duration-300 cursor-pointer py-2">ABOUT US</div>
+          <div class="hover:text-[#E53924] transition-colors duration-300 cursor-pointer py-2">SERVICE</div>
+
+          <div class="relative group cursor-pointer inline-block">
+            <div class="hover:text-[#E53924] transition-colors duration-300 flex items-center gap-2 py-2">
+              PAGES <i
+                class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 group-hover:text-[#E53924] transition-all duration-300"></i>
+            </div>
+            <div
+              class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 bg-[#0B1C33]/95 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-3 z-[999] text-xs tracking-normal border border-white/10 rounded-b-2xl rounded-tr-2xl rounded-tl-sm border-t-2 border-t-[#E53924] overflow-hidden mt-1">
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Our
+                  Team</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Project
+                  Gallery</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Pricing
+                  Plans</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">FAQ
+                  Page</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative group cursor-pointer inline-block">
+            <div class="hover:text-[#E53924] transition-colors duration-300 flex items-center gap-2 py-2">
+              BLOG <i
+                class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 group-hover:text-[#E53924] transition-all duration-300"></i>
+            </div>
+            <div
+              class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 w-64 bg-[#0B1C33]/95 backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-3 z-[999] text-xs tracking-normal border border-white/10 rounded-b-2xl rounded-tr-2xl rounded-tl-sm border-t-2 border-t-[#E53924] overflow-hidden mt-1">
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Blog Grid
+                  Standard</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Blog Sidebar
+                  View</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Blog Details
+                  Right</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+              <div
+                class="group/item flex items-center justify-between px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer">
+                <span class="group-hover/item:translate-x-1 transition-transform duration-200 font-medium">Latest
+                  News</span>
+                <i
+                  class="fa-solid fa-arrow-right text-[10px] text-[#E53924] opacity-0 group-hover/item:opacity-100 -translate-x-2 group-hover/item:translate-x-0 transition-all duration-200"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="hover:text-[#E53924] transition-colors duration-300 cursor-pointer py-2">CONTACT</div>
+        </nav>
+
+        <a href="#"
+          class="relative inline-flex items-center justify-center px-8 py-3.5 overflow-hidden font-bold text-xs lg:text-sm tracking-widest uppercase text-white bg-[#E53924] rounded-lg shadow-[0_10px_25px_rgba(229,57,36,0.4)] transition-all duration-300 group hover:shadow-[0_15px_30px_rgba(229,57,36,0.6)] hover:-translate-y-0.5">
+
+          <!-- Light Shine Effect -->
+          <span
+            class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></span>
+
+          <!-- Text & Icon -->
+          <span class="relative flex items-center gap-2.5 z-10">
+            <span>Get In Touch</span>
+            <!-- Rotating & Scaling Icon -->
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform duration-300 transform group-hover:rotate-45 group-hover:scale-150"></i>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section
+      class="relative w-full max-w-[1920px] mx-auto min-h-[600px] sm:min-h-[750px] lg:min-h-[850px] flex items-center overflow-hidden font-['Space_Grotesk']">
+
+      <!-- Hero Background Image -->
+      <img src="images/hiro_bg.png" alt="Hero Background - Roadwork Construction"
+        class="absolute inset-0 w-full h-full object-cover object-center z-0">
+
+      <!-- Light Dark Overlay -->
+      <div class="absolute inset-0 bg-[#0B1C33]/20 z-0"></div>
+
+      <!-- Hero Content Box -->
+      <div class="w-full px-6 sm:px-12 md:px-16 lg:px-20 py-16 sm:py-20 relative z-10">
+
+        <!-- মোবাইল/ট্যাবলেটে ml-0 বা ml-4 থাকবে, এবং বড় স্ক্রিনে (xl) ২০০ পিক্সেল মার্জিন পাবে -->
+        <div class="max-w-[650px] ml-0 xl:ml-[240px]">
+
+          <!-- Hero Heading -->
+          <h1
+            class="text-white font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-[62px] leading-[1.12] tracking-tight mb-6">
+            How Road Workers<br>
+            Shape <span class="text-[#E53924]">Our Daily</span><br>
+            Commute
+          </h1>
+
+          <!-- Subtitle Description -->
+          <p
+            class="text-gray-300 text-sm sm:text-sm md:text-sm leading-relaxed font-normal max-w-[540px] mb-10 opacity-90">
+            We face each project as a new challenge and with our ability to build and innovate we overcome all barriers
+            to using content.
+          </p>
+
+          <!-- Action Area: Premium Button + Video Play Button -->
+          <div class="flex items-center gap-6 sm:gap-8 md:gap-12 flex-wrap">
+
+            <!-- Premium Animated Explore Button -->
+            <a href="#"
+              class="relative inline-flex items-center justify-center px-7 sm:px-9 py-3.5 sm:py-4 overflow-hidden font-bold text-sm tracking-wide text-white bg-[#E53924] rounded-lg shadow-[0_10px_30px_rgba(229,57,36,0.5)] transition-all duration-300 group hover:shadow-[0_15px_35px_rgba(229,57,36,0.7)] hover:-translate-y-1 active:translate-y-0">
+
+              <!-- Animated Glow Overlay -->
+              <span
+                class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#FF523B] to-[#E53924] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+              <!-- Glossy Sweep Effect -->
+              <span
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></span>
+
+              <!-- Button Text and Icon -->
+              <span class="relative flex text-base sm:text-xl items-center gap-3 z-10">
+                <span>Explore More</span>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform duration-600 transform group-hover:rotate-45 group-hover:scale-125"></i>
+              </span>
+            </a>
+
+            <!-- Custom Video Play Button Container -->
+            <a href="#"
+              class="relative flex items-center justify-center group cursor-pointer ml-auto sm:ml-32 md:ml-6 mt-20 lg:ml-20 mt-20 xl:ml-40 sm:mt-24 lg:mt-32">
+
+              <!-- Your Play Button Image -->
+              <img src="images/hiro_icon.png" alt="Play Video"
+                class="w-20 h-20 md:w-24 md:h-24 object-contain transition-transform duration-300 hover:scale-105">
+
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. STATS BAR -->
+    <section class="bg-[#E53924] text-white py-6 px-88 md:px-24 lg:px-32 relative">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-[1320px] mx-auto px-4">
+
+        <!-- Item 1 -->
+        <div
+          class="relative before:absolute before:left-0 before:-top-6 before:-bottom-6 before:w-[3px] before:bg-white/20 after:absolute after:right-0 after:-top-6 after:-bottom-6 after:w-[3px] after:bg-white/20">
+          <h3 class="font-['Space_Grotesk'] text-4xl lg:text-5xl font-bold">26k</h3>
+          <p class="text-xs lg:text-sm font-medium mt-2 uppercase tracking-wider">PROJECT COMPLETED</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="relative after:absolute after:right-0 after:-top-6 after:-bottom-6 after:w-[3px] after:bg-white/20">
+          <h3 class="font-['Space_Grotesk'] text-4xl lg:text-5xl font-bold">24k</h3>
+          <p class="text-xs lg:text-sm font-medium mt-2 uppercase tracking-wider">SATISFIED CLIENTS</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="relative after:absolute after:right-0 after:-top-6 after:-bottom-6 after:w-[3px] after:bg-white/20">
+          <h3 class="font-['Space_Grotesk'] text-4xl lg:text-5xl font-bold">47+</h3>
+          <p class="text-xs lg:text-sm font-medium mt-2 uppercase tracking-wider">YEARS OF EXPERIENCE</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="relative after:absolute after:right-0 after:-top-6 after:-bottom-6 after:w-[3px] after:bg-white/20">
+          <h3 class="font-['Space_Grotesk'] text-4xl lg:text-5xl font-bold">56k</h3>
+          <p class="text-xs lg:text-sm font-medium mt-2 uppercase tracking-wider">TOTAL BRANCHES</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section class="bg-[#f4f5f8] py-20 px-4 font-['Space_Grotesk',sans-serif]">
+      <div class="max-w-[1320px] mx-auto">
+
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+          <!-- Sub Title Tag -->
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="w-6 h-[2px] bg-[#e53935]"></span>
+            <span class="text-base font-bold tracking-wider text-[#e53935] uppercase">Our Services</span>
+          </div>
+
+          <!-- Main Title -->
+          <h2 class="text-3xl md:text-5xl font-bold text-[#0e1e38] tracking-tight">
+            Our Awesome Services
+          </h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Card 1: Parking Lots -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <h3 class="text-2xl font-bold text-[#0e1e38] mb-4">Parking Lots</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-2">
+                Fantastic shop! Great selection prices service friendly creatives agency recend from selection,
+                prices...
+              </p>
+
+              <!-- Read More Button -->
+              <a href="#"
+                class="inline-flex items-center gap-2 text-[14px] font-bold text-[#0e1e38] hover:text-[#e53935] transition-colors group">
+                Read More
+                <span
+                  class="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center text-[#e53935] text-xs transition-transform group-hover:translate-x-1">
+                  ↗
+                </span>
+              </a>
+            </div>
+
+            <div class="relative pt-10 overflow-visible -mt-4">
+              <!-- Main Image -->
+              <img src="images/Services1.png" alt="Parking Lots" class="w-full h-[220px] object-cover" />
+
+              <!-- Floating Red Icon Badge -->
+              <div class="absolute -top-1 right-0 z-10 flex items-center justify-center">
+                <img src="images/service_icon1.png" alt="Icon" class="w-15 h-15 object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Seal Coating -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <h3 class="text-2xl font-bold text-[#0e1e38] mb-4">Seal Coating</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-2">
+                Fantastic shop! Great selection prices service friendly creatives agency recend from selection,
+                prices...
+              </p>
+
+              <!-- Read More Button -->
+              <a href="#"
+                class="inline-flex items-center gap-2 text-[14px] font-bold text-[#0e1e38] hover:text-[#e53935] transition-colors group">
+                Read More
+                <span
+                  class="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center text-[#e53935] text-xs transition-transform group-hover:translate-x-1">
+                  ↗
+                </span>
+              </a>
+            </div>
+
+            <div class="relative pt-10 overflow-visible mt-2">
+              <!-- Main Image -->
+              <img src="images/Services2.png" alt="Parking Lots" class="w-full h-[220px] object-cover" />
+
+              <!-- Floating Red Icon Badge -->
+              <div class="absolute -top-1 right-0 z-10 flex items-center justify-center">
+                <img src="images/service_icon2.png" alt="Icon" class="w-15 h-15 object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Concrete Services -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <h3 class="text-2xl font-bold text-[#0e1e38] mb-4">Concrete Services</h3>
+              <p class="text-gray-500 text-sm leading-relaxed mb-2">
+                Fantastic shop! Great selection prices service friendly creatives agency recend from selection,
+                prices...
+              </p>
+
+              <!-- Read More Button -->
+              <a href="#"
+                class="inline-flex items-center gap-2 text-[14px] font-bold text-[#0e1e38] hover:text-[#e53935] transition-colors group">
+                Read More
+                <span
+                  class="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center text-[#e53935] text-xs transition-transform group-hover:translate-x-1">
+                  ↗
+                </span>
+              </a>
+            </div>
+
+            <div class="relative pt-10 overflow-visible mt-2">
+              <!-- Main Image -->
+              <img src="images/Services3.png" alt="Parking Lots" class="w-full h-[220px] object-cover" />
+
+              <!-- Floating Red Icon Badge -->
+              <div class="absolute -top-1 right-0 z-10 flex items-center justify-center">
+                <img src="images/service_icon3.png" alt="Icon" class="w-15 h-15 object-contain" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ABOUT ROADLY SECTION -->
+    <section class="bg-white py-16 md:py-20 px-4 font-['Space_Grotesk',sans-serif] overflow-hidden">
+      <div class="max-w-[1320px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+
+          <!-- Left Column: Content Section -->
+          <div class="w-full">
+            <!-- Sub Title Tag -->
+            <div class="inline-flex items-center gap-2 px-4 pt-0 pb-4 mb-6">
+              <span class="w-4 h-[2px] bg-[#e53935]"></span>
+              <span class="text-base font-bold tracking-wider text-[#e53935] uppercase">About Roadly</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="text-3xl sm:text-4xl mb-10 lg:text-[48px] font-bold text-[#0e1e38] leading-[1.2]">
+              How Road Construction Shapes <span class="text-[#e53935]">Our Cities</span>
+            </h2>
+
+            <!-- Description Paragraph -->
+            <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-10 max-w-[570px]">
+              Fantastic shop! Great selection fair prices and friendly greate selection you your recomend in quality of
+              the products is exceptional, and for prices are reasonable shop selection selection prices.
+            </p>
+
+            <!-- Features Gray Box -->
+            <div class="bg-[#f4f5f8] px-6 rounded-sm mb-12 border-l-4 border-l-[#e53935] max-w-[570px]">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3.5 gap-x-6">
+
+                <!-- Feature 1 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>Quality material</span>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>High Quality material</span>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>Professional Worker</span>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>Freeze product Shipping</span>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>120 Expert Engineer</span>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="flex items-center gap-2.5 text-[#0e1e38] font-bold text-sm">
+                  <span class="text-[#e53935] text-xs font-black">»</span>
+                  <span>120 Expert Engineer</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Action Buttons Container -->
+            <div class="flex items-center gap-6 sm:gap-8 flex-wrap">
+
+              <!-- Discover More Button -->
+              <a href="#"
+                class="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-sm tracking-wide text-white bg-[#E53924] rounded-lg shadow-[0_10px_30px_rgba(229,57,36,0.4)] transition-all duration-300 group hover:shadow-[0_15px_35px_rgba(229,57,36,0.6)] hover:-translate-y-0.5 active:translate-y-0">
+
+                <!-- Animated Glow Overlay -->
+                <span
+                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#FF523B] to-[#E53924] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+                <!-- Glossy Sweep Effect -->
+                <span
+                  class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></span>
+
+                <!-- Button Text and Icon -->
+                <span class="relative flex text-base items-center gap-3 z-10">
+                  <span>Discover More</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform duration-300 transform group-hover:rotate-45"></i>
+                </span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Overlapping Images Layout -->
+          <div class="relative w-full max-w-[600px] lg:max-w-none h-[480px] sm:h-[550px] mx-auto">
+
+            <!-- Main Large Top/Right Image -->
+            <div class="w-[78%] ml-auto h-[380px] sm:h-[450px]">
+              <img src="images/about-image1.png" alt="Road Construction" class="w-full h-full object-cover shadow-md" />
+            </div>
+
+            <!-- Overlapping Small Bottom/Left Image (Truck Image) -->
+            <div class="absolute top-[120px] sm:top-[140px] left-0 w-[218px] h-[253px]">
+              <img src="images/about-image2.png" alt="Orange Truck" class="w-full h-full object-cover block" />
+            </div>
+
+            <!-- Red Experience Badge at Bottom Right -->
+            <div class="absolute bottom-16 right-0 z-20">
+              <img src="images/about-image3.png" alt="55 Years of Experience"
+                class="w-36 sm:w-44 md:w-auto h-auto drop-shadow-xl" />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROJECTS OVERVIEW SECTION -->
+    <section
+      class="relative font-['Space_Grotesk',sans-serif] pt-20 pb-44 px-4 md:px-16 overflow-hidden bg-cover bg-center">
+      <div class="absolute inset-0">
+        <img src="images/OVERVIEWbg.png" alt="overvier" class="w-full h-full object-cover">
+      </div>
+
+      <div class="relative max-w-[1320px] mx-auto">
+        <!-- Header -->
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-gray-800 pb-6 text-white">
+          <div>
+            <div
+              class="inline-flex items-center gap-4 bg-[#2c385d] px-6 py-2 rounded-full text-base font-semibold tracking-wider text-gray-300 uppercase mb-3">
+              <span class="w-6 h-1 bg-white"></span> RECENT PROJECT
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold">Newest Project Overview</h2>
+          </div>
+          <div class="flex items-center gap-4 mt-4 md:mt-0">
+            <!-- Previous Button -->
+            <button type="button" aria-label="Previous"
+              class="group relative w-12 h-12 rounded-full bg-white text-gray-800 flex items-center justify-center shadow-md transition-all duration-300 ease-out hover:bg-red-600 hover:text-white hover:scale-105 hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-red-600 hover:shadow-lg hover:shadow-red-500/30 active:scale-95 focus:outline-none">
+              <svg class="w-6 h-6 transition-transform duration-300 ease-out group-hover:-translate-x-1.5" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 12h16.5M3.75 12l5.25-5.25M3.75 12l5.25 5.25" />
+              </svg>
+            </button>
+
+            <!-- Next Button -->
+            <button type="button" aria-label="Next"
+              class="group relative w-12 h-12 rounded-full bg-white text-gray-800 flex items-center justify-center shadow-md transition-all duration-300 ease-out hover:bg-red-600 hover:text-white hover:scale-105 hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-red-600 hover:shadow-lg hover:shadow-red-500/30 active:scale-95 focus:outline-none">
+              <svg class="w-6 h-6 transition-transform duration-300 ease-out group-hover:translate-x-1.5" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20.25 12H3.75m16.5 0l-5.25-5.25m5.25 5.25l-5.25 5.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-28">
+          <!-- Card 1 -->
+          <div class="relative group overflow-hidden shadow-lg">
+            <img src="images/OVERVIEW1.png" alt="Road Project 1" class="w-full h-[400px] object-cover">
+            <div
+              class="absolute bottom-0 left-0 w-0 h-0 border-l-[50px] border-l-red-600 border-t-[50px] border-t-transparent">
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="relative group overflow-hidden shadow-lg">
+            <img src="images/OVERVIEW2.png" alt="Road Project 2" class="w-full h-[400px] object-cover">
+            <div
+              class="absolute bottom-0 left-0 w-0 h-0 border-l-[50px] border-l-red-600 border-t-[50px] border-t-transparent">
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="relative group overflow-hidden shadow-lg">
+            <img src="images/OVERVIEW3.png" alt="Road Project 3" class="w-full h-[400px] object-cover">
+            <div
+              class="absolute bottom-0 left-0 w-0 h-0 border-l-[50px] border-l-red-600 border-t-[50px] border-t-transparent">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PLANNING SECTION -->
+    <section class="w-full relative">
+
+      <!-- Height doubled by increasing vertical padding (py-20 md:py-24) -->
+      <div class="w-full bg-white shadow-2xl md:py-24 px-6 lg:px-12 flex items-center">
+
+        <div
+          class="w-[1320px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-2 items-center text-center">
+
+          <!-- Step 01 -->
+          <div class="relative flex flex-col items-center">
+            <div
+              class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-300 p-3 mb-6">
+              <div
+                class="w-full h-full rounded-full border-2 border-dashed border-x-gray-300 flex items-center justify-center">
+                <img src="images/PLANNING_1.png" alt="Patching Planning" class="w-10 h-10 object-contain" />
+              </div>
+              <span
+                class="absolute top-1 right-1 w-7 h-7 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                01
+              </span>
+            </div>
+            <h4 class="font-bold text-[#0b1329] text-base md:text-lg">Patching Planning</h4>
+
+            <!-- Curved Arrow Image -->
+            <div class="hidden lg:block absolute top-12 -right-10 xl:-right-14 z-10 pointer-events-none">
+              <img src="images/PLANNING_Arow.png" alt="arrow" class="w-12 xl:w-16 h-auto object-contain" />
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="relative flex flex-col items-center">
+            <div
+              class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-300 p-3 mb-6">
+              <div
+                class="w-full h-full rounded-full border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <img src="images/PLANNING_2.png" alt="Detailed Proposal" class="w-10 h-10 object-contain" />
+              </div>
+              <span
+                class="absolute top-1 right-1 w-7 h-7 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                02
+              </span>
+            </div>
+            <h4 class="font-bold text-[#0b1329] text-base md:text-lg">Detailed Proposal</h4>
+
+            <!-- Curved Arrow Image -->
+            <div class="hidden lg:block absolute top-12 -right-10 xl:-right-14 z-10 pointer-events-none">
+              <img src="images/PLANNING_Arow.png" alt="arrow" class="w-12 xl:w-16 h-auto object-contain" />
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="relative flex flex-col items-center">
+            <div
+              class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-300 p-3 mb-6">
+              <div
+                class="w-full h-full rounded-full border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <img src="images/PLANNING_3.png" alt="Road Installation" class="w-10 h-10 object-contain" />
+              </div>
+              <span
+                class="absolute top-1 right-1 w-7 h-7 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                03
+              </span>
+            </div>
+            <h4 class="font-bold text-[#0b1329] text-base md:text-lg">Road Installation</h4>
+
+            <!-- Curved Arrow Image -->
+            <div class="hidden lg:block absolute top-12 -right-10 xl:-right-14 z-10 pointer-events-none">
+              <img src="images/PLANNING_Arow.png" alt="arrow" class="w-12 xl:w-16 h-auto object-contain" />
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="relative flex flex-col items-center">
+            <div
+              class="relative w-32 h-32 md:w-36 md:h-36 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-300 p-3 mb-6">
+              <div
+                class="w-full h-full rounded-full border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <img src="images/PLANNING_4.png" alt="Finished Road" class="w-10 h-10 object-contain" />
+              </div>
+              <span
+                class="absolute top-1 right-1 w-7 h-7 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-sm">
+                04
+              </span>
+            </div>
+            <h4 class="font-bold text-[#0b1329] text-base md:text-lg">Finished Road</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. EXPERT TEAM SECTION -->
+    <section class="w-full bg-[#fcfcfd] py-20 px-4 md:px-8">
+      <div class="max-w-[1320px] mx-auto text-center">
+
+        <!-- Top Badge -->
+        <div
+          class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full text-base font-semibold tracking-wider text-red-600 uppercase mb-4 shadow-sm">
+          <span class="w-6 h-0.5 bg-red-600"></span> OUR TEAM
+        </div>
+
+        <!-- Title -->
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1e293b] mb-16 opacity-90">
+          Expert Team Member
+        </h2>
+
+        <!-- Team Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+
+          <!-- Team Member 1 -->
+          <div
+            class="bg-white rounded-none overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between">
+            <!-- Image Container with Diagonal Cut Top-Right -->
+            <div class="relative w-full h-72">
+              <img src="images/team1.png" alt="Ronald Richards" class="w-full h-full object-cover" />
+            </div>
+            <!-- Content -->
+            <div class="p-6 bg-white">
+              <h3 class="font-bold text-xl text-[#0b1329] mb-1">Ronald Richards</h3>
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">ASST. ENGINEER</p>
+              <!-- Footer Divider & Social Links -->
+              <div class="flex items-center justify-between pt-2">
+                <span class="w-8 h-0.5 bg-red-500"></span>
+                <div class="flex items-center gap-40">
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#1877F2] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">f</a>
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#E4405F] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="bg-white rounded-none overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between">
+            <div class="relative w-full h-72">
+              <img src="images/team2.png" alt="Saifur Rahman" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="font-bold text-xl text-[#0b1329] mb-1">Saifur Rahman</h3>
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">ASST. ENGINEER</p>
+              <div class="flex items-center justify-between pt-2">
+                <span class="w-8 h-0.5 bg-red-500"></span>
+                <div class="flex items-center gap-40">
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#1877F2] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">f</a>
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#E4405F] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="bg-white rounded-none overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between">
+            <div class="relative w-full h-72">
+              <img src="images/team3.png" alt="Al-Amin Hossen" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="font-bold text-xl text-[#0b1329] mb-1">Al-Amin Hossen</h3>
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">ASST. ENGINEER</p>
+              <div class="flex items-center justify-between pt-2">
+                <span class="w-8 h-0.5 bg-red-500"></span>
+                <div class="flex items-center gap-40">
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#1877F2] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">f</a>
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#E4405F] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div
+            class="bg-white rounded-none overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between">
+            <div class="relative w-full h-72">
+              <img src="images/team4.png" alt="Apurbo Islam" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="font-bold text-xl text-[#0b1329] mb-1">Apurbo Islam</h3>
+              <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4">ASST. ENGINEER</p>
+              <div class="flex items-center justify-between pt-2">
+                <span class="w-8 h-0.5 bg-red-500"></span>
+                <div class="flex items-center gap-40">
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#1877F2] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">f</a>
+                  <a href="#"
+                    class="w-8 h-8 bg-gray-100 hover:bg-[#E4405F] hover:text-white rounded-full flex items-center justify-center text-xs font-bold text-gray-600 transition-colors duration-200">in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. client feedback SECTION -->
+    <section class="relative w-full py-20 px-4 md:px-8 lg:px-16 overflow-hidden font-['Space_Grotesk',sans-serif]">
+
+      <!-- Full-Width Background Image Tag -->
+      <img src="images/client_feedbackBG.png" alt="Background Pattern"
+        class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 z-0"></div>
+
+      <div class="relative z-10 max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+        <!-- Left Column: Client Image Holder -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-start">
+          <div class="relative w-full max-w-[420px] aspect-[4/5] bg-gray-800 shadow-2xl overflow-hidden">
+            <!-- Client Image Holder -->
+            <img src="images/client_feedback.png" alt="Client" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Right Column: Content -->
+        <div class="lg:col-span-7 flex flex-col justify-center text-left text-white relative">
+
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-[#1e3258] px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-white uppercase w-fit mb-4 border border-gray-800">
+            <span class="w-3 h-0.5 bg-white"></span> CLIENT FEEDBACK
+          </div>
+
+          <!-- Heading -->
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            What Clients About Say
+          </h2>
+
+          <!-- Feedback Quote -->
+          <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-8 max-w-2xl font-light">
+            "Vestibulum mauris morbi porttitor sagittis aptent hendrerit for gravida senectus venenatis conubia mattis
+            vestibulum. Proin vel vulputate lien cursus massa elementum diam varius torquent.
+          </p>
+
+          <!-- Client Details & Star Rating -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+              <h4 class="text-xl font-bold text-white">Alva Edision</h4>
+              <span class="text-xs text-gray-400 uppercase tracking-widest font-medium">— REGULAR CUSTOMER</span>
+            </div>
+
+            <!-- Rating Stars -->
+            <div class="flex items-center gap-1">
+              <div class="w-6 h-6 bg-[#1e3258] flex items-center justify-center text-red-600 text-xs rounded-sm">★</div>
+              <div class="w-6 h-6 bg-[#1e3258] flex items-center justify-center text-red-600 text-xs rounded-sm">★</div>
+              <div class="w-6 h-6 bg-[#1e3258] flex items-center justify-center text-red-600 text-xs rounded-sm">★</div>
+              <div class="w-6 h-6 bg-[#1e3258] flex items-center justify-center text-red-600 text-xs rounded-sm">★</div>
+              <div class="w-6 h-6 bg-[#1e3258] flex items-center justify-center text-red-600 text-xs rounded-sm">★</div>
+            </div>
+          </div>
+
+          <!-- Slider Arrows (Right Side Vertical Line & Controls) -->
+          <!-- Slider Arrows Container -->
+          <div class="hidden lg:flex flex-col items-center absolute right-0 top-1/2 -translate-y-1/2 px-6">
+
+            <!-- Top Vertical Line -->
+            <div class="w-0.5 h-28 bg-gradient-to-t from-transparent via-gray-400/40 to-gray-400/80"></div>
+
+            <!-- Buttons Wrapper -->
+            <div class="flex flex-col gap-3 my-3">
+              <!-- Left/Prev Arrow Button -->
+              <button
+                class="w-10 h-10 rounded-full bg-white text-gray-900 flex items-center justify-center hover:bg-[#E43D30] hover:text-white transition-colors duration-200 shadow-md">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                </svg>
+              </button>
+
+              <!-- Right/Next Arrow Button -->
+              <button
+                class="w-10 h-10 rounded-full bg-white text-gray-900 flex items-center justify-center hover:bg-[#E43D30] hover:text-white transition-colors duration-200 shadow-md">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Bottom Vertical Line -->
+            <div class="w-0.5 h-28 bg-gradient-to-b from-transparent via-gray-400/40 to-gray-400/80"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. NEWS & BLOGS -->
+    <section class="relative w-full py-16 px-4 md:px-8 lg:px-16 overflow-hidden font-['Space_Grotesk',sans-serif]">
+
+      <!-- Full-Width Background Image Tag Holder -->
+      <img src="images/help_bg.png" alt="Background Need Road Services"
+        class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
+
+      <!-- Red Overlay (Matching the exact red tone of the design) -->
+      <div class="absolute inset-0 z-0"></div>
+
+      <!-- Content Container -->
+      <div class="relative z-10 max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <!-- Left Side Content -->
+        <div class="flex flex-col items-start text-left">
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-white uppercase mb-3 border border-white/20">
+            <span class="w-3 h-0.5 bg-white"></span> NEED ANY HELP
+          </div>
+
+          <!-- Heading -->
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
+            Need Road services
+          </h2>
+        </div>
+
+        <!-- Right Side CTA Button (Solid Square, Premium Look) -->
+        <div>
+          <a href="#"
+            class="inline-flex items-center gap-3 bg-white text-[#D32F2F] px-8 py-4 font-bold text-sm tracking-wide hover:bg-[#0b1329] hover:text-white transition-all duration-300 ease-in-out shadow-lg">
+            Make Appointment
+            <span class="text-base font-normal">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative w-full py-20 pb-8 px-4 md:px-8 lg:px-16 overflow-hidden font-['Space_Grotesk',sans-serif]">
+
+      <!-- 1. Background Image Tag Holder (No Background Color Used) -->
+      <img src="images/footer_bg.png" alt="Footer Background Pattern"
+        class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none" />
+
+      <!-- Main Content Container (Max Width 1320px) -->
+      <div class="relative z-10 max-w-[1320px] mx-auto">
+
+        <!-- Top Grid Layout (4 Columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
+
+          <!-- Column 1: Company Info & Logo (3 Cols) -->
+          <div class="lg:col-span-3 flex flex-col justify-between">
+            <div>
+              <!-- 2. Logo Image Tag -->
+              <div class="flex items-center gap-3 mb-6">
+                <img src="images/footer_logo.png" alt="Roadly Logo" class="h-10 w-auto object-contain" />
+              </div>
+              <p class="text-gray-400 text-xs leading-relaxed max-w-xs font-light">
+                Evolve professional intellectual capital from fantastic shop! Great selection fair profesio need and
+                clean develop.
+              </p>
+            </div>
+
+            <!-- Social Icons (Sharp non-rounded) -->
+            <div class="flex items-center gap-2 mt-8">
+              <a href="#"
+                class="w-8 h-8 bg-white/10 hover:bg-[#E43D30] text-white flex items-center justify-center text-xs transition-colors duration-200">f</a>
+              <a href="#"
+                class="w-8 h-8 bg-white/10 hover:bg-[#E43D30] text-white flex items-center justify-center text-xs transition-colors duration-200">in</a>
+              <a href="#"
+                class="w-8 h-8 bg-white/10 hover:bg-[#E43D30] text-white flex items-center justify-center text-xs transition-colors duration-200">📷</a>
+              <a href="#"
+                class="w-8 h-8 bg-white/10 hover:bg-[#E43D30] text-white flex items-center justify-center text-xs transition-colors duration-200">p</a>
+            </div>
+          </div>
+
+          <!-- Column 2: Our Services (3 Cols) -->
+          <div class="lg:col-span-3">
+            <h4 class="text-white font-bold text-lg mb-6">Our Services</h4>
+            <ul class="space-y-3 text-xs text-gray-400">
+              <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><span
+                    class="text-gray-500">»</span> About Company</a></li>
+              <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><span
+                    class="text-gray-500">»</span> Services</a></li>
+              <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><span
+                    class="text-gray-500">»</span> Testimonials</a></li>
+              <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><span
+                    class="text-gray-500">»</span> Project</a></li>
+              <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><span
+                    class="text-gray-500">»</span> Why Choose Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Recent News (3 Cols) -->
+          <div class="lg:col-span-3">
+            <h4 class="text-white font-bold text-lg mb-6">Recent News</h4>
+            <div class="space-y-4">
+
+              <!-- News Item 1 -->
+              <div class="flex items-center gap-3">
+                <!-- 3. News Image 1 Tag -->
+                <img src="images/footer-im1.png" alt="News Thumbnail" class="w-14 h-14 object-cover flex-shrink-0" />
+                <div>
+                  <a href="#"
+                    class="text-xs text-white hover:text-[#E43D30] font-medium leading-snug line-clamp-2 transition-colors">
+                    How to add battery backup...
+                  </a>
+                  <span class="text-[10px] text-gray-500 block mt-1">Date : May 10, 2024</span>
+                </div>
+              </div>
+
+              <!-- News Item 2 -->
+              <div class="flex items-center gap-3">
+                <!-- 4. News Image 2 Tag -->
+                <img src="images/footer-im2.png" alt="News Thumbnail" class="w-14 h-14 object-cover flex-shrink-0" />
+                <div>
+                  <a href="#"
+                    class="text-xs text-white hover:text-[#E43D30] font-medium leading-snug line-clamp-2 transition-colors">
+                    How to add battery Low...
+                  </a>
+                  <span class="text-[10px] text-gray-500 block mt-1">Date : May 11, 2024</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 4: Contact Info / Newsletter (3 Cols) -->
+          <div class="lg:col-span-3">
+            <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+            <p class="text-xs text-gray-400 mb-4 leading-relaxed font-light">
+              Subscribe our newsletter to get our latest Update & news
+            </p>
+
+            <!-- Newsletter Form -->
+            <form class="space-y-3">
+              <input type="email" placeholder=""
+                class="w-full bg-white/5 border border-gray-700/80 px-4 py-2.5 text-xs text-white focus:outline-none focus:border-[#E43D30] transition-colors" />
+              <button type="submit"
+                class="w-full bg-[#E43D30] text-white py-3 text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-[#0b1329] transition-all duration-300">
+                Subscribe Now
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright Divider Line & Text -->
+        <div class="pt-8 border-t border-gray-600 text-center relative">
+          <p class="text-xs text-gray-500">
+            Copyright ©2024 Roadly. All Rights Reserved
+          </p>
+
+          <!-- 5. Vehicle / Bulldozer Illustration (Absolute Bottom Right Positioned) -->
+          <img src="images/footer-track.png" alt="Construction Vehicle"
+            class="hidden lg:block absolute -right-60 bottom-0 max-w-[200px] h-auto pointer-events-none" />
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
